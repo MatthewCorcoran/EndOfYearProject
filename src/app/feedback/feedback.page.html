@@ -7,6 +7,7 @@
 
 <ion-content>
 
+   <!-- set of radio buttons and saving the selection -->
   <ion-list>
     <ion-radio-group [(ngModel)]="myFeedback">
       <ion-list-header>
@@ -41,8 +42,10 @@
       </ion-item>
     </ion-radio-group>
   </ion-list>
+   <!-- On button click save the radio button selection-->
   <ion-button (click)="saveFeedback()">Save</ion-button>
   <br>
+   <!-- Outputs the radio button selection that is saved -->
   <ion-label> My Feedback is {{myFeedback}}</ion-label>
   <br>
  

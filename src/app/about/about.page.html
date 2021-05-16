@@ -5,15 +5,16 @@
   </ion-toolbar>
 </ion-header>
 
+ <!-- adding a image and a small bit of text to the page -->
 <ion-content [fullscreen]="true">
   <img src="https://as1.ftcdn.net/v2/jpg/00/74/87/60/1000_F_74876030_CnOhXOkwfD3ui3FJep7ZzGcKZmzLI5sL.jpg">
   <p> My Name is Matthew</p>
   <p> I am a second year student in GMIT and I am studying Software Development</p>
   <p> I have create this application as part of my end of year project</p>
+  
   <!-- Inputs with labels -->
+   <!-- Button to save contents of the input -->
 <ion-item>
-  
-  
 </ion-item>
 <ion-input [(ngModel)]="myComment" placeholder="Please enter comment here" ></ion-input>
 <ion-button (click)="saveComment()">Send</ion-button>
