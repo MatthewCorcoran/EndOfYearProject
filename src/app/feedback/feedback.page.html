@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="ion-text-center">Feedback</ion-title>
+    <ion-back-button defaultHref ="folder/:id"></ion-back-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-radio-group [(ngModel)]="myFeedback">
+      <ion-list-header>
+        <ion-label>
+          Feedback
+        </ion-label>
+      </ion-list-header>
+  
+      <ion-item>
+        <ion-label>Very Poor</ion-label>
+        <ion-radio value="Very Poor"></ion-radio>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Poor</ion-label>
+        <ion-radio value="Poor"></ion-radio>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Good</ion-label>
+        <ion-radio value="Good"></ion-radio>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Very Good</ion-label>
+        <ion-radio value="Very Good"></ion-radio>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Excellent</ion-label>
+        <ion-radio value="Excellent"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+  <ion-button (click)="saveFeedback()">Save</ion-button>
+  <br>
+  <ion-label> My Feedback is {{myFeedback}}</ion-label>
+  <br>
+ 
+
+</ion-content>
